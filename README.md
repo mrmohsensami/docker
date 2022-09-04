@@ -73,11 +73,11 @@ docker rm bx
 docker rm -f bx
 ```
 ## image layers
-![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker5.jpg "docker")
+![docker](https://github.com/mrmohsensami/docker/blob/main/img/image-layer.jpg?raw=true "docker")
 
-![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker6.jpg "docker")
+![docker](https://github.com/mrmohsensami/docker/blob/main/img/image-layer2.jpg?raw=true "docker")
 
-![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker7.jpg "docker")
+![docker](https://github.com/mrmohsensami/docker/blob/main/img/image-layer3.jpg?raw=true "docker")
 
 ```docker
 docker image inspect python
