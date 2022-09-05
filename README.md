@@ -89,6 +89,10 @@ docker exec -it <docker name> bash
 ![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-policy.jpg "docker")
 
 ```docker
+docker container run -it python bash
+docker ps
+docker container run -itd python bash
+docker ps
 docker container inspect <container name>
 docker run -it --restart always python bash
 docker stop ....
