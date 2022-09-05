@@ -86,22 +86,24 @@ docker exec <container name> ls
 docker exec -it <docker name> bash
 ```
 ## restart policy
-![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-policy.jpg "docker")
+![docker](https://github.com/mrmohsensami/docker/blob/main/img/docker-policy.jpg?raw=true "docker")
 
 ```docker
 docker container run -it python bash
 docker ps
 docker container run -itd python bash
 docker ps
-docker container inspect <container name>
 docker run -it --restart always python bash
+exit
+docker container inspect <container name>
 docker stop ....
 ```
 ## Dockerfile
-![docker](https://raw.githubusercontent.com/mohsensami/docker/main/img/Dockerfile.jpg "docker")
+![docker](https://github.com/mrmohsensami/docker/blob/main/img/Dockerfile.jpg?raw=true "docker")
 
 ```docker
 docker image build -t web:1.0 .
+docker run web:1.20
 ```
 ## docker push
 ```docker
@@ -110,7 +112,7 @@ docker push hacosami/hello:1.0.0
 docker info =>>> dockerhub
 ```
 ## port forwarding
-![docker port forwarding](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-port.jpg "docker port forwarding")
+![docker port forwarding](https://github.com/mrmohsensami/docker/blob/main/img/docker-port.jpg "docker port forwarding")
 
 ```docker
 docker run -d --name rd -p 3030:6379 redis
@@ -122,7 +124,7 @@ docker save -o bx.tar busybox:latest
 docker load -i bx.tar
 ```
 ## commit container layers
-![docker commit](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-commit.jpg "docker commit")
+![docker commit](https://github.com/mrmohsensami/docker/blob/main/img/docker-commit.jpg "docker commit")
 
 ```docker
 docker run -itd --name py python
@@ -133,7 +135,7 @@ docker run -itd --name py python:one
 docker exec -it py bash
 ```
 ## docker volume
-![docker volume](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-volume.jpg "docker volume")
+![docker volume](https://github.com/mrmohsensami/docker/blob/main/img/docker-volume.jpg "docker volume")
 
 ```docker
 docker volume prune
@@ -143,7 +145,7 @@ docker run -itd --name bx -v v1:/home busybox
 docker exec -it bx sh
 ```
 ## docker network
-![docker network](https://raw.githubusercontent.com/mohsensami/docker/main/img/docker-network.jpg "docker network")
+![docker network](https://github.com/mrmohsensami/docker/blob/main/img/docker-network.jpg "docker network")
 
 ```docker
 docker network create abc
