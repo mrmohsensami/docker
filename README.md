@@ -131,6 +131,9 @@ docker load -i bx.tar
 
 ```docker
 docker run -itd --name py python
+docker exec -it py bash
+touch hi.txt
+exit
 docker diff py
 docker container commit py python:one
 docker container -a "mohsen" -m "hello.txt" commit py python:one
