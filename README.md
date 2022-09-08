@@ -117,6 +117,9 @@ docker info =>>> dockerhub
 ```docker
 docker run -d --name rd -p 3030:6379 redis
 docker exec -it rd bash
+
+redis-cli
+get name
 ```
 ## save load
 ```docker
