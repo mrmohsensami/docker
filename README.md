@@ -144,6 +144,7 @@ docker exec -it py bash
 ![docker volume](https://github.com/mrmohsensami/docker/blob/main/img/docker-volume.jpg "docker volume")
 
 ```docker
+docker volume ls
 docker volume prune
 docker volume create v1
 docker volume inspect v1
@@ -161,14 +162,15 @@ docker run -itd --name py python
 docker run -itd --name bx busybox
 docker network connect abc py
 docker network connect abc bx
+docker network inspect abc
 bx => ping py
 ```
-## docker network
+## docker compose
 ```docker
 docker-compose up
 docker-compose up -d
 ```
-## docker network
+## docker dangling
 ```docker
 dockr images --filter "dangling=true"
 docker rmi $(docker images -q --filter "dangling=true")
